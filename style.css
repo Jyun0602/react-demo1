@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    
+    /*可以用border: 1px solid red;看有沒有留白*/
+    width: 1200px;
+    margin: 0 auto; /*上右下左*/
+    display: flex;
+}
+
+/* 左側區 */
+.header {
+
+    width: 260px;
+    padding: 20px;
+    /*裡面加大用padding 外面用margin*/
+    background-image: url("./img/left_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center bottom;
+    background-color: #646856;
+    /* background-color: rgb(69,72,59)*/
+}
+
+.header ul {
+
+    padding: 30px;
+}
+
+.header li {
+    list-style: none;
+}
+
+.header li a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dotted#fff;
+    /* 因為超連結是行內元素，所以沒有寬高範圍*/
+    /* 寬高範圍是內容撐開的*/
+    /* 若要控制寬高範圍，則轉換成區塊元素*/
+    display: block;
+    /*垂直用block 水平用inline-block*/
+    text-align: center;
+    line-height: 80px;
+    /*行高*/
+}
+/*右側區*/
+.content{
+    background-color: #b0b69c;
+    width: 820px; /* 820+左右各40=900 (加起來要900)*/
+    padding: 20px 40px;
+}
+.content h3{
+    font-size: 32px;
+    color: #696d5c;
+    text-align: center;
+    /*margin-top: 20px;
+    margin-bottom: 20px; */
+    margin:20px 0; /*上下20 左右0*/
+}
+.content p{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.info{
+
+    display: flex;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+.info .box{
+    width: 220px;
+    padding: 40px 20px;
+}
+.info .b1{background-color: #fed0cd;}
+.info .b2{background-color: #fef5cd;}
+.info .b3{background-color: #97c49c;}
+.info .box h4{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.info .box a{
+    color: #fff;
+    text-decoration: none;
+    background-color: #7a6361;
+    /* padding: 10px 40px ; */
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+.footer{
+    background-color: #3a3b33;
+    color: #cad4ac;
+    text-align: center;
+    margin-top: 20px 0;
+    padding: 20px 0;
+}
+.footer h2{
+    margin-bottom: 10px;
+}
